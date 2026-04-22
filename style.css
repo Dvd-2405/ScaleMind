@@ -1,7 +1,4 @@
-/* ============================================================
-   MetaCalc — metacalc.css
-   Paleta: Ember & Moss (âmbar + verde musgo, fundo preto)
-   ============================================================ */
+
 
 :root {
   --bg-deep:        #060a08;
@@ -18,7 +15,7 @@
   --error:          #ef4444;
 }
 
-/* ── Reset ── */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
@@ -30,7 +27,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ── Orbs ── */
+
 .orb {
   position: fixed;
   border-radius: 50%;
@@ -75,7 +72,7 @@ html, body {
   50%     { transform: translate(-50%,-50%) translateY(20px); }
 }
 
-/* ── Layout ── */
+
 #app {
   position: relative;
   z-index: 1;
@@ -85,7 +82,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* ── Header ── */
+
 .header {
   text-align: center;
   margin-bottom: 32px;
@@ -113,7 +110,6 @@ html, body {
   letter-spacing: 0.3px;
 }
 
-/* ── Tabs ── */
 .tabs {
   display: flex;
   gap: 4px;
@@ -143,7 +139,7 @@ html, body {
 }
 .tab:not(.active):hover { color: var(--text); }
 
-/* ── Steps ── */
+
 .steps {
   display: flex;
   align-items: center;
@@ -202,7 +198,7 @@ html, body {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
 }
 
-/* ── Card ── */
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -230,7 +226,7 @@ html, body {
   line-height: 1.5;
 }
 
-/* ── Form ── */
+
 .field { margin-bottom: 16px; }
 .field label {
   display: block;
@@ -277,7 +273,7 @@ html, body {
 }
 .field select option { background: #0d1a10; color: var(--text); }
 
-/* ── Toggle ── */
+
 .toggle-row { display: flex; gap: 8px; }
 .toggle-btn {
   flex: 1;
@@ -300,7 +296,7 @@ html, body {
   color: var(--primary-light);
 }
 
-/* ── Objective Cards ── */
+
 .obj-card {
   display: flex;
   align-items: center;
@@ -357,7 +353,7 @@ html, body {
   border-color: transparent;
 }
 
-/* ── Buttons ── */
+
 .btn {
   width: 100%;
   padding: 15px;
@@ -402,11 +398,10 @@ html, body {
 }
 .btn-back:hover { background: rgba(255,255,255,0.08); color: var(--text); }
 
-/* ── Screens ── */
 .screen { display: none; }
 .screen.active { display: block; }
 
-/* ── Result ── */
+
 .result-hero {
   text-align: center;
   padding: 20px 0 24px;
@@ -449,7 +444,7 @@ html, body {
   margin-bottom: 12px;
 }
 
-/* ── Macros ── */
+
 .macros-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -484,7 +479,7 @@ html, body {
 }
 .macro-unit { font-size: 10px; color: rgba(134,168,142,0.5); }
 
-/* ── Hydration ── */
+
 .hydration-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -509,7 +504,7 @@ html, body {
 }
 .hydro-name { font-size: 11px; color: var(--muted); font-weight: 400; margin-top: 2px; }
 
-/* ── Activity ── */
+
 .activity-card {
   background: rgba(217,119,6,0.08);
   border: 1px solid rgba(217,119,6,0.2);
@@ -530,14 +525,14 @@ html, body {
 }
 .activity-desc { font-size: 12.5px; color: var(--muted); font-weight: 300; line-height: 1.4; }
 
-/* ── Divider ── */
+
 .divider {
   height: 1px;
   background: var(--border);
   margin: 20px 0;
 }
 
-/* ── Animations ── */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -559,9 +554,7 @@ html, body {
 }
 .screen-enter { animation: screenIn 0.4s ease both; }
 
-/* ── Responsive ── */
 
-/* Phones compactos < 360px */
 @media (max-width: 359px) {
   #app { padding: 18px 12px 48px; }
   .logo { font-size: 22px; }
@@ -588,7 +581,7 @@ html, body {
   .toggle-btn { font-size: 12.5px; padding: 11px; }
 }
 
-/* Phones normais 360–480px */
+
 @media (min-width: 360px) and (max-width: 480px) {
   #app { padding: 24px 16px 52px; }
   .result-cal { font-size: 52px; }
@@ -598,7 +591,7 @@ html, body {
   .card { padding: 22px 18px; }
 }
 
-/* Tablets pequenos 481–767px */
+
 @media (min-width: 481px) and (max-width: 767px) {
   #app { max-width: 540px; padding: 36px 28px 64px; }
   .result-cal { font-size: 68px; }
@@ -610,7 +603,7 @@ html, body {
   .obj-title { font-size: 16px; }
 }
 
-/* Desktop 768px+ */
+
 @media (min-width: 768px) {
   #app { max-width: 520px; padding: 48px 0 80px; }
   .header { margin-bottom: 36px; }
@@ -642,7 +635,7 @@ html, body {
   .step-label { font-size: 12px; }
 }
 
-/* Touch: área clicável mínima */
+
 @media (hover: none) and (pointer: coarse) {
   .obj-card { padding-top: 20px; padding-bottom: 20px; }
   .toggle-btn { min-height: 48px; }
